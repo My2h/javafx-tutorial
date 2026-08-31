@@ -39,3 +39,21 @@
     -fx-pref-height: 0;
     -fx-opacity: 0;
 }
+
+/* Composer: frosted pill that lights up on focus. */
+.text-field {
+    -fx-background-color: rgba(255, 255, 255, 0.07);
+    -fx-background-radius: 22;
+    -fx-border-color: rgba(255, 255, 255, 0.16);
+    -fx-border-radius: 22;
+    -fx-border-width: 1;
+    -fx-text-fill: #f2eeff;
+    -fx-prompt-text-fill: rgba(242, 238, 255, 0.38);
+    -fx-font-size: 15px;
+    -fx-padding: 0 18 0 18;
+}
+
+.text-field:focused {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-border-color: #ff4ecd;
+}
