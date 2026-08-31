@@ -57,3 +57,24 @@
     -fx-background-color: rgba(255, 255, 255, 0.12);
     -fx-border-color: #ff4ecd;
 }
+
+/* Send button: gradient pill with a glow that intensifies on hover. */
+.button {
+    -fx-background-color: linear-gradient(to bottom right, #7b5cff, #ff4ecd);
+    -fx-background-radius: 22;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(255, 78, 205, 0.45), 14, 0.2, 0, 3);
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom right, #8f74ff, #ff6fd8);
+    -fx-effect: dropshadow(gaussian, rgba(255, 78, 205, 0.7), 20, 0.35, 0, 4);
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to bottom right, #6a4be0, #e0399f);
+    -fx-effect: dropshadow(gaussian, rgba(255, 78, 205, 0.3), 8, 0.2, 0, 1);
+}
